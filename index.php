@@ -4,7 +4,7 @@
 	$server = 'localhost';
 	$user = 'root';
 	$password = '123456';
-	$database = 'artjog_harian';
+	$database = 'artjog_harian_v02';
 	
 	$db = ADONewConnection($dbdriver); # eg 'mysql' or 'postgres'
 	$db->debug = false;
