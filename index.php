@@ -62,7 +62,7 @@
 </table>
 <table width="100%" border="0" cellspacing="2" cellpadding="4">
 	<tr class="tablehead">
-		<td class="table">Artist</td><td class="table">Image</td><td class="table">Description</td><td class="table">Cur</td><td class="table">Price</td><td class="table">Disc.</td><td class="table">Total</td>
+		<td class="table">Artist</td><td class="table">Image</td><td class="table">Description</td><td class="table">Cur</td><td class="table">Price</td><td class="table">Disc. (%)</td><td class="table">Total</td>
 	</tr>
 <?php
 	//$usr = $_GET['id'];
@@ -71,7 +71,7 @@
 	while($row = $rs->FetchRow()) {
 ?>
 	<tr class="tablecont">
-		<td class="table"><?=$row['artist']?></td><td class="table"><img class="imgkarya" src="../laporan_harian/uploads/<?=$row['image']?>"></td><td class="table"><?=$row['description']?></td><td class="table">USD</td><td align="right" class="table"><?=$row['price']?></td><td class="table">disc.</td><td class="table">Tot</td>
+		<td class="table"><?=$row['artist'];?></td><td class="table"><img class="imgkarya" src="../laporan_harian/uploads/<?=$row['image'];?>"></td><td class="table"><?=$row['description'];?></td><td class="table">Rp</td><td align="right" class="table"><?=$row['price'];?></td><td class="table"><?=$row['discount'];?></td><td align="right" class="table"><?=$row['total'];?></td>
 	</tr>
 <?php
 	} //EOF while($row = $rs->FetchRow())
