@@ -1,0 +1,14 @@
+body {
+	font-family:Calibri, Arial;
+	color:#094a93;
+}
+.table {
+	border:solid 1px #094a93;
+}
+.tablehead {
+	font-weight:bold;
+	text-align:center;
+}
+.tablecont {
+	text-align:center;
+}
