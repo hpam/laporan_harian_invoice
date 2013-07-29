@@ -7,8 +7,21 @@ body {
 }
 .tablehead {
 	font-weight:bold;
+	font-size:12px;
 	text-align:center;
 }
 .tablecont {
+	font-size:12px;
 	text-align:center;
+}
+.default {
+	font-size:12px;
+}
+.logo{
+	width:150px;
+	height:auto;
+}
+.imgkarya {
+	width:100px;
+	height:auto;
 }
