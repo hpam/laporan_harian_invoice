@@ -1,6 +1,7 @@
 body {
 	font-family:Calibri, Arial;
 	color:#094a93;
+	margin-top: 0px;
 }
 .table {
 	border:solid 1px #094a93;
@@ -25,11 +26,31 @@ body {
 	width:100px;
 	height:auto;
 }
-.print {
+
+/* Print panel */
+.panel {
+	width:16%;
+	height: 100%;
+	float:right;
+	background: #e4e4e5 url('../images/spacer_invoice.png');
+	background-repeat:repeat-y;
+}
+.menucontainer {
+	padding:15px;
+}
+.menucontainer a {
+	text-decoration:none;
+}
+.menucontainer ul {
+	line-height:20px;
+	padding-left:15px;
+}
+.printbutton {
 	display:block;
-	width:auto;
+	background:url('../images/print_preview_button.png');
+	width:150px;
 	height:30px;
-	border:solid 1px #094a93;
 	text-align:center;
-	padding:4px;
+	padding:0px;
+	margin:auto;
 }

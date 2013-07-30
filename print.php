@@ -16,6 +16,7 @@
 <?php
 	$template = $db->Execute("SELECT * FROM  `lh_devider`");
 	while($head = $template->FetchRow()) {
+		$kurs = $head['kurs_dollar'];
 ?>
 		<td align="left" class="default"><img class="logo" src="../laporan_harian/uploads/<?=$head['logo_invoice'];?>"></td>
 		<td align="right" class="default"><?=$head['header_invoice'];?></td>
@@ -28,7 +29,7 @@
 	</tr>
 </table>
 <?php
-	$pemesan = $db->Execute("SELECT DISTINCT nama, tanggal_pesan, invoice_number, due_date FROM  `view1` WHERE invoice_number =  '$inv'");
+	$pemesan = $db->Execute("SELECT DISTINCT nama, alamat, tanggal_pesan, invoice_number, due_date FROM  `view1` WHERE invoice_number_id =  '$inv'");
 	while($data = $pemesan->FetchRow()) {
 ?>
 <table width="100%" border="0">
@@ -36,7 +37,7 @@
 		<td width="57%" rowspan="4" align="left" class="default">
 			Buyer:<br />
 			<b><?=$data['nama'];?></b><br />
-			Jakarta-Indonesia
+			<?=$data['alamat'];?>
 		</td>
 	</tr>
 	<tr>
@@ -58,7 +59,7 @@
 	</tr>
 <?php
 	//$usr = $_GET['id'];
-	$rs = $db->Execute("SELECT * FROM `view1` WHERE invoice_number =  '$inv'");
+	$rs = $db->Execute("SELECT * FROM `view1` WHERE invoice_number_id =  '$inv'");
 	while($row = $rs->FetchRow()) {
 ?>
 	<tr class="tablecont">
@@ -68,10 +69,10 @@
 	} //EOF while($row = $rs->FetchRow())
 ?>
 <?php
-	$total = $db->Execute("SELECT SUM( total ) FROM view1 WHERE invoice_number = '$inv'");
+	$total = $db->Execute("SELECT SUM( total ) FROM view1 WHERE invoice_number_id = '$inv'");
 	while($data_total = $total->FetchRow()) {
 		$rp = $data_total[0];
-		$us = $rp / 10000;
+		$us = $rp / $kurs;
 		$rp_format = number_format($rp, 2, ',', '.');
 		$us_format = number_format($us, 2, '.', ',');
 ?>
