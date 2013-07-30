@@ -1,5 +1,5 @@
 <?php
-	include ("config.php");	
+	include ("config.php");
 	$inv = $_GET['idv'];
 ?>
 <html>
@@ -11,8 +11,6 @@
 
 </head>
 <body>
-<?=$inv?>
-<?include ("menu.php");?>
 <table width="100%" border="0">
 	<tr>
 <?php
