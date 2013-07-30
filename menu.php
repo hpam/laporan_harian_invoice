@@ -1,3 +1,4 @@
+<b>INVOICE</b>
 <ul>
 <?php
 	$menu = $db->Execute("SELECT DISTINCT invoice_number FROM `view1`");
@@ -8,4 +9,4 @@
 	} //EOF while($data_menu = $menu->FetchRow())
 ?>
 </ul>
-<a href="print.php?idv=<?=$_GET['idv'];?>" target="_blank">Print View</a>
+<a class="print" href="print.php?idv=<?=$_GET['idv'];?>" target="_blank">Print Preview</a>

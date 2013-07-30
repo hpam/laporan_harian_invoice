@@ -25,3 +25,11 @@ body {
 	width:100px;
 	height:auto;
 }
+.print {
+	display:block;
+	width:auto;
+	height:30px;
+	border:solid 1px #094a93;
+	text-align:center;
+	padding:4px;
+}

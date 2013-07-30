@@ -11,8 +11,9 @@
 
 </head>
 <body>
-<?=$inv?>
-<?include ("menu.php");?>
+
+<div style="border:solid 0px red; width:83%; float:left;">
+
 <table width="100%" border="0">
 	<tr>
 <?php
@@ -104,5 +105,12 @@
 		</td>
 	<tr>
 </table>
+
+</div>
+
+<div style="border:solid 0px red; width:16%; float:right; background:url('images/spacer_invoice.png'); repeat-y;">
+	<?include ("menu.php");?>
+</div>
+
 </body>
 </html>
