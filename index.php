@@ -17,7 +17,7 @@
 	print "</pre>";
 	*/
 	
-	$inv = intval(2);
+	$inv = $_GET['idv'];
 ?>
 <html>
 <head>
@@ -28,7 +28,8 @@
 
 </head>
 <body>
-<?=$inv;?>
+<?=$inv?>
+<?include ("menu.php");?>
 <table width="100%" border="0">
 	<tr>
 <?php
