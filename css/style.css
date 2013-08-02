@@ -2,6 +2,32 @@ body {
 	font-family:Calibri, Arial;
 	color:#094a93;
 	margin-top: 0px;
+	scrollbar-face-color: #d7d7d7;
+}
+::-webkit-scrollbar {
+	  width: 10px;
+} /* this targets the default scrollbar (compulsory) */
+::-webkit-scrollbar-track {
+	  background-color: #ffffff;
+} /* the new scrollbar will have a flat appearance with the set background color */
+::-webkit-scrollbar-thumb {
+	  background-color: rgba(0, 0, 0, 0.2);
+	  -webkit-border-radius:5px;
+} /* this will style the thumb, ignoring the track */
+::-webkit-scrollbar-button {
+	  background-color: #ffffff;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+::-webkit-scrollbar-corner {
+	  background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+/* Invoice panel */
+.panelkiri{
+}
+.invoice {
+	overflow:auto;
+	height:100%;
+	padding-right:10px;
 }
 .table {
 	border:solid 1px #094a93;
@@ -28,7 +54,7 @@ body {
 }
 
 /* Print panel */
-.panel {
+.panelkanan {
 	width:16%;
 	height: 100%;
 	float:right;

@@ -12,8 +12,9 @@
 </head>
 <body style="height: 100%;">
 
-<div style="border:solid 0px red; width:83%; float:left;">
+<div class="panelkiri" style="border:solid 0px red; width:83%; float:left;">
 
+<div style="border:solid 0px red;" class="invoice">
 <table width="100%" border="0">
 	<tr>
 <?php
@@ -106,10 +107,11 @@
 		</td>
 	<tr>
 </table>
+</div>
 
 </div>
 
-<div class="panel" style="border:solid 0px red;">
+<div class="panelkanan" style="border:solid 0px red;">
 	<?php
 	include ("menu.php");
 	?>
